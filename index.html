@@ -1,0 +1,290 @@
+<<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplo de Slider con HTML y CSS</title>
+
+    <style>
+      body {
+        background-image: url("fondos-para-páginas-web-6.jpg");
+      }
+
+      #ariel-slider {
+        font-family: sans-serif;
+        margin: auto;
+        background-image: url("fondos-para-páginas-web-6.jpg");
+        max-width: 900px;
+        width: 100%;
+        padding: 40px;
+        box-sizing: border-box;
+      }
+
+      #ariel-slider > ul,
+      li {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+      }
+
+      #ariel-slider > ul.slider {
+        position: relative;
+        max-width: 900px;
+        width: 100%;
+        height: 550px;
+      }
+
+      #ariel-slider > ul.slider h1 {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.6);
+        padding: 10px;
+        left: 50%;
+        top: 100px;
+        transform: translate(-50%, -50%);
+      }
+
+      #ariel-slider > ul.slider li {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        padding-left: 10px;
+        opacity: 0;
+        width: inherit;
+        height: inherit;
+        transition: opacity 0.5s;
+        background: white;
+      }
+
+      #ariel-slider > ul.slider li img {
+        width: 100%;
+        height: 300px;
+        object-fit: contain;
+        text-align: center;
+      }
+
+      #ariel-slider > ul.slider li:first-child {
+        opacity: 1;
+      }
+
+      #ariel-slider > ul.slider li:target {
+        opacity: 1;
+      }
+
+      #ariel-slider > .menu {
+        text-align: center;
+        margin: 20px;
+      }
+
+      #ariel-slider > .menu li {
+        display: inline-block;
+        text-align: center;
+      }
+
+      #ariel-slider > .menu li a {
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        background-color: grey;
+        padding: 10px;
+        width: 20px;
+        height: 25px;
+        font-size: 25px;
+        border-radius: 100%;
+      }
+      h1{
+        text-align: center;
+      }
+      .pies{
+        text-align: center;
+        color: red;
+        
+
+      }
+      
+    </style>
+  </head>
+
+  <body>
+    <div id="Ariel-slider">
+      <ul class="slider">
+        <li id="slide1">
+          <img src="hola2hola1holaavatar1176869800-edit-edit-edit.jpeg" />
+          <center>
+            
+            <h2>Nombre:</h2>  <h3>Ariel Luis Pérez De La Cruz</h3>
+            <h2>Matricula:</h2> <h3>2020-10110</h3> 
+          </center>
+          
+        </li>
+        <li id="slide2">
+          <h1>
+            Las plataformas activas actualmente para las que vale la pena
+            desarrollar.
+          </h1>
+          <p></p>
+        </li>
+        <li id="slide3">
+          <h2>
+            Algunas de las plataformas más populares para desarrollar
+            actualmente incluyen:
+          </h2>
+
+          <h3>
+            iOS y macOS para dispositivos móviles y computadoras personales de
+            Apple, respectivamente.<br />
+
+            <br />Android para dispositivos móviles y tabletas.<br />
+
+            <br />Windows para computadoras personales y dispositivos
+            móviles.<br />
+
+            <br />Web (usando tecnologías como HTML, CSS y JavaScript) para
+            acceso desde cualquier dispositivo con un navegador web.<br />
+
+            <br />Amazon Alexa y Google Assistant para desarrollar aplicaciones
+            de voz.
+          </h3>
+        </li>
+        <li id="slide4">
+          <h1>Lenguajes de programación usados para programar en móvil.</h1>
+        </li>
+        <li id="slide5">
+          <h2>
+            Existen varios lenguajes de programación que se pueden usar para
+            desarrollar aplicaciones móviles:
+          </h2>
+          <h3>
+            Swift y Objective-C son los lenguajes oficiales para desarrollar
+            aplicaciones para iOS y macOS.<br />
+
+            <br />Java y Kotlin son los lenguajes oficiales para desarrollar
+            aplicaciones para Android.<br />
+
+            <br />C# es el lenguaje oficial para desarrollar aplicaciones para
+            Windows Phone.<br />
+
+            <br />
+            React Native es un framework que permite desarrollar aplicaciones
+            nativas para iOS y Android usando JavaScript y React.<br />
+
+            <br />Flutter es otro framework de código abierto para desarrollar
+            aplicaciones móviles para iOS y Android usando Dart.<br />
+          </h3>
+        </li>
+        <li id="slide6">
+          <h1>Tipos de aplicaciones (nativas, híbridas, etc)</h1>
+        </li>
+        <li id="slide7">
+          <h2>
+            Existen varios tipos de aplicaciones móviles, algunos de los cuales
+            incluyen:
+          </h2>
+          <h3>
+            Aplicaciones nativas: Estas aplicaciones son desarrolladas
+            específicamente para un sistema operativo móvil en particular, como
+            iOS o Android, usando un lenguaje de programación específico, como
+            Swift o Java.<br /> 
+
+            <br />Aplicaciones híbridas: Estas aplicaciones combinan elementos
+            de aplicaciones nativas y web, y se desarrollan usando tecnologías
+            como HTML, CSS y JavaScript. <br />
+
+            <br />Aplicaciones web progresivas (PWA): Estas aplicaciones son
+            similares a las aplicaciones web tradicionales, pero tienen algunas
+            de las funciones de las aplicaciones nativas, como el acceso a las
+            funciones del dispositivo y el almacenamiento offline. <br />
+
+            <br />
+            Aplicaciones de voz: Estas aplicaciones permiten interactuar con un
+            dispositivo móvil a través de comandos de voz y son compatibles con
+            asistentes de voz como Amazon Alexa y Google Assistant.<br />
+          </h3>
+        </li>
+        <li id="slide8">
+            <h1>Etapas para el desarrollo de aplicaciones móviles</h1>
+          </li>
+        <li id="slide9">
+            <h2>
+                El desarrollo de aplicaciones móviles implica varias etapas, algunas de las cuales incluyen:
+            </h2>
+            <h3>
+                Planificación: En esta etapa se establecen los objetivos y requisitos del proyecto, se investiga el mercado y la competencia, y se define el alcance del proyecto.<br /> 
+  
+              <br />Diseño: En esta etapa se crea el diseño de la interfaz de usuario y la experiencia de usuario, se establece la arquitectura de la aplicación y se determina la funcionalidad de la aplicación. <br />
+  
+              <br />Desarrollo: En esta etapa se escribe el código de la aplicación, se integran las funciones y se realizan pruebas para detectar y corregir errores. <br />
+  
+              <br />
+              Pruebas: En esta etapa se realizan pruebas exhaustivas de la aplicación para asegurar su calidad y estabilidad.<br />
+              <br />Lanzamiento: Una vez que la aplicación ha sido probada y se ha corregido cualquier problema, se lanza en las tiendas de aplicaciones oficiales, como App Store o Google Play. <br />
+
+              <br />Mantenimiento y actualizaciones: Una vez lanzada, la aplicación requerirá mantenimiento regular para corregir errores y agregar nuevas funciones y actualizaciones. <br />
+
+            </h3>
+          </li>
+          <li id="slide10">
+            <h1>Frameworks que se pueden usar para desarrollar aplicaciones (Menciones 3 y cual es su version actual). </h1>
+          </li>
+          <li id="slide11">
+            <h2>
+                Existen varios frameworks que se pueden usar para desarrollar aplicaciones móviles, algunos de los cuales incluyen: 
+            </h2>
+            <h3>
+                React Native: es un framework de código abierto desarrollado por Facebook que permite desarrollar aplicaciones nativas para iOS y Android usando JavaScript y React. La versión actual de React Native es la 0.66<br /> 
+  
+              <br />Flutter: es un framework de código abierto desarrollado por Google que permite desarrollar aplicaciones móviles para iOS y Android usando Dart. La versión actual de Flutter es la 2.1.0 <br />
+  
+              <br />Xamarin: es un framework desarrollado por Microsoft que permite desarrollar aplicaciones nativas para iOS, Android y Windows usando C# y el framework .NET. La versión actual de Xamarin es la 6.22.0<br />
+
+            </h3>
+          </li>
+          <li id="slide12">
+            <h1>Gracias por ver</h1>
+          </li>
+          
+      </ul>
+
+      <ul class="menu">
+        <li>
+          <a href="#slide1">1</a>
+        </li>
+        <li>
+          <a href="#slide2">2</a>
+        </li>
+        <li>
+          <a href="#slide3">3</a>
+        </li>
+        <li>
+          <a href="#slide4">4</a>
+        </li>
+        <li>
+          <a href="#slide5">5</a>
+        </li>
+        <li>
+          <a href="#slide6">6</a>
+        </li>
+        <li>
+          <a href="#slide7">7</a>
+        </li>
+        <li>
+            <a href="#slide8">8</a>
+        </li>
+        <li>
+            <a href="#slide9">9</a>
+        </li>
+        <li>
+            <a href="#slide10">10</a>
+        </li>
+        <li>
+            <a href="#slide11">11</a>
+        </li>
+        <li>
+            <a href="#slide12">12</a>
+        </li>
+        
+      </ul>
+    </div>
+    <p class="pies"> by Ariel Luis Pérez De La Cruz 2020-10110</p>
+  </body>
+</html>
